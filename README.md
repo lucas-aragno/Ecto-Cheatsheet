@@ -3,7 +3,7 @@
 This is mostly for me, but you can check it out fork it, add more snippets and such
 
 
-**disclaimer: this is mostly to remember things when I'm working with phoenix so it's more phoenix/ecto oriented** 
+**disclaimer: This is mostly to remember things when I'm working with phoenix so it's more phoenix/ecto oriented** 
 
 * *Getting all records*
 
@@ -42,7 +42,7 @@ record = %{ record | data: "updated!" }
 { :ok, updated_record } = MyApp.Repo.update record
 ```
 
-** Notes **
+**Notes**
 
 - *preload associations before using them*
 
