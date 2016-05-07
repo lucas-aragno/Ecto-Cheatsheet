@@ -27,7 +27,7 @@ record = %MyApp.MyModel{ data: "test" } # data being a field of the model
 * *Delete a single record*
 
 ```elixir
-MyApp.Repo.detele(record)
+MyApp.Repo.delete(record)
 ```
 
 * *Find by*
