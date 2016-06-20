@@ -42,6 +42,16 @@ record = %{ record | data: "updated!" }
 { :ok, updated_record } = MyApp.Repo.update record
 ```
 
+* *Getting the last/first record*
+```elixir
+last_record = MyApp.Repo.one(from x in MyApp.Record, limit: 1, order_by: [desc: x.id])
+first_record = MyApp.Repo.one(from x in MyApp.Record, limit: 1, order_by: [asc: x.id])
+
+# You might need to use Ecto.Query.from...
+# You can change the limit number to get more records
+```
+
+
 **Notes**
 
 - *preload associations before using them*
