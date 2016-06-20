@@ -33,7 +33,7 @@ MyApp.Repo.delete(record)
 * *Find by*
 
 ```elixir
-record = MyApp.Repo.get_by MyApp.Record, data "findme"
+record = MyApp.Repo.get_by MyApp.Record, data: "findme"
 ```
 
 * *Updating*
