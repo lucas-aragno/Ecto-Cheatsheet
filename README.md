@@ -47,7 +47,7 @@ record = %{ record | data: "updated!" }
 last_record = MyApp.Repo.one(from x in MyApp.Record, limit: 1, order_by: [desc: x.id])
 first_record = MyApp.Repo.one(from x in MyApp.Record, limit: 1, order_by: [asc: x.id])
 
-# You might need to use Ecto.Query.from...
+# You might need to use Ecto.Query.from... like import Ecto.Query, only: [from: 2]
 # You can change the limit number to get more records
 ```
 
