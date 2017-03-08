@@ -4,9 +4,14 @@ This is mostly for me, but you can check it out fork it, add more snippets and s
 
 **disclaimer: This is mostly to remember things when I'm working with phoenix so it's more phoenix/ecto oriented** 
 
-** Run a phoenix console **
+**Run a phoenix console**
 ```bash
-iex -S mix phoenix.server
+iex -S mix
+```
+
+**If you are on Heroku**
+```bash
+heroku run iex -S mix --app=your-app
 ```
 
 * *Getting all records*
