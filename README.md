@@ -2,8 +2,12 @@
 
 This is mostly for me, but you can check it out fork it, add more snippets and such
 
-
 **disclaimer: This is mostly to remember things when I'm working with phoenix so it's more phoenix/ecto oriented** 
+
+** Run a phoenix console **
+```bash
+iex -S mix phoenix.server
+```
 
 * *Getting all records*
 
